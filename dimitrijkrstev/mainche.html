@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <link rel="stylesheet" href="ubavinata.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Димитриј Крстев</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/836544439681810433/947102800423321682/DKlogo.jpg">
+</head>
+<body id = "body">
+    <header class = "headerche"><img id = "logo" src = "DKlogo.png" alt = "logo">Dimitrij Krstev
+        <input type = "image" id = "toggle" src = "https://cdn-icons-png.flaticon.com/512/606/606807.png" alt = "den" onclick = "togglelight();"></header>
+    <nav class = "borderi"><ul>
+        <li><a href = "#kratkoinfo">Кратки Информации</a></li>
+        <li><a href = "#interesi">Интереси</a></li>
+        <li><a href = "#kontakt">Контакт</a></li>
+    </ul></nav>
+    <div id = "sredina1"><b>Димитриј Крстев</b><p id = "tekst2">
+        Роден на 29ти Јули 2002 година во Скопје, Македонија,<br>
+        уште од мали години имав голема фасцинација во областа на<br>
+        компјутери, фасцинација што прерасна во страст и животна<br>
+        желба. Поради оваа желба ја направив одлуката да се запишам<br>
+        на Факултет за Информатички Науки и Компјутерско Инжинерство<br>
+        во 2021 година, одлука која ќе ја обезбеди мојата иднина.</p>
+    </div>
+    <div id = "sredina2">
+        <h1 id = "kratkoinfo" class = "borderi headerche ">Кратки Информации</h1>
+        <table>
+            <tr><td>Датум на раѓање</td><td>29/07/2002</td></tr>
+            <tr><td>Националност</td><td>Македонец</td></tr>
+            <tr><td>Основно Образование</td><td>ОУ "Јохан Хајнрих Песталоци"</td></tr>
+            <tr><td>Гимназиско Образование</td><td>СУГС "Георги Димитров"</td></tr>
+            <tr><td>Високо Образование</td><td>Факултет за Информатички Науки и Компјутерско Инжинерство<br>Смер: ПИТ<br>Години на студии: 4</td></tr>
+            <tr><td>Програмски јазици</td><td>C, C++, Java, JavaScript</td></tr>
+        </table>
+    </div>
+    <div style = "width: 100%">
+        <h1 id = "interesi" class = "borderi headerche">Интереси</h1>
+        <span class = "spanchinja" style = "background-color: #0077b6">
+            <img class ="slikcinja" src = "bnw.jpg" alt = "slika">
+            <p class = "naslovi1">Книги</p>
+            <p class = "spanchinja_txt">Позицијата за омилен жанр на литература ми ја има завземено Sci-fi. Дистописки романи,
+                кои оргинално ме навлекоа во читање, ми имаат останато во срце како омилени. Романи како
+                1984 од George Orwell и Brave New World од Aldous Huxley, кои зимаат целосно различни пристапи
+                кон изградба на тоталитаристичко општество, но сепак реалистично прикажуваат што
+                може човекот да постигне со желбата за моќ.</p>
+
+            <p class = "spanchinja_txt">Други книги од оваа жанра што ми оставиле впечаток се Solaris од Stanislaw Lem, книга
+                која е неспоредлива со ни една друга во однос на градење атмосфера, I, Robot од Isaac Asimov, креативно напишана
+                книга која е до ден денес позната по 3те правила на роботика на Asimov, и Dark Matter од Blake Crouch, книга
+                која креативно ги користи теоретските правила на мултиверзум, коj има вистинска можност за постоење како начин
+                да се објасни црната материја во нашиот универзум.</p>
+        </span>
+        <span class = "spanchinja" style = "background-color: #0096c7">
+            <img class ="slikcinja" src = "dune.jpg" alt = "slika">
+            <p class = "naslovi1">Филмови</p>
+            <p class = "spanchinja_txt">Слично како моите омилени романи, една од посаканите жанри од филмови исто така ми е Sci-Fi. Филмови како
+                2001: A Space Odyssey, Ex Machina, Bladerunner, Dune и Interstellar.</p>
+
+            <p class = "spanchinja_txt">Покрај овие Sci-Fi филмови, исто ме интересира и </p>
+        </span>
+        <span class = "spanchinja" style = "background-color: #48cae4">
+            <img class ="slikcinja" src = "mac.webp" alt = "slika">
+            <p class = "naslovi1">Музика</p>
+        </span>
+    </div>
+    <div>
+        <h1 id = "kontakt" class = "borderi headerche">Контакт</h1>
+    </div>
+    <footer class = "headerche">DimitrijKrstev.com</footer>
+</body>
+<script>
+    function togglelight(){
+        if (document.getElementById("toggle").alt === "den"){
+            document.getElementById("toggle").src = "toggle.png";
+            document.getElementById("toggle").alt = "nokj"
+            document.getElementById("logo").src = "DKlogo2.png";
+            document.getElementById("body").style.color = '#F8F8FFFF';
+            document.getElementById("body").style.backgroundColor = '#3a3a3a';
+            let borderi = document.getElementsByClassName("borderi");
+            for (let i = 0; i < borderi.length; ++i){ borderi[i].style.borderColor = "#313131"; borderi[i].style.color = '#F8F8FFFF' }
+            let headeri = document.getElementsByClassName("headerche");
+            for (let i = 0; i < headeri.length; ++i){ headeri[i].style.backgroundColor = "#1f1f1f"; }
+        }
+        else{
+            document.getElementById("toggle").src = "https://cdn-icons-png.flaticon.com/512/606/606807.png";
+            document.getElementById("toggle").alt = "den"
+            document.getElementById("logo").src = "DKlogo.png";
+            document.getElementById("body").style.color = '#3a3a3a';
+            document.getElementById("body").style.backgroundColor = '#ebebf1';
+            let borderi = document.getElementsByClassName("borderi");
+            for (let i = 0; i < borderi.length; ++i){ borderi[i].style.borderColor = "#e5e5e5"; borderi[i].style.color = '#3a3a3a' }
+            let headeri = document.getElementsByClassName("headerche");
+            for (let i = 0; i < headeri.length; ++i){ headeri[i].style.backgroundColor = "#F8F8FFFF"; }
+        }
+    }
+</script>
