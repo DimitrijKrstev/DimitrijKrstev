@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    color: #3a3a3a;    background-color: #ebebf1;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+#logo{
+    width: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#toggle{
+    width: 2.5rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 0.5%;
+}
+.headerche{
+    background-color: ghostwhite;
+}
+header{
+    font-family: Caladea, serif;
+    font-size: 60px;
+    text-align: center;
+    padding: 25px;
+    line-height: 40px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: #a6a6a6;
+}
+nav{
+    font-size: 23px;
+    text-align: center;
+    padding: 0;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-color: #e5e5e5;
+}
+nav ul{
+    padding: 0;
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+nav li{
+    display: inline-block;
+    padding: 0 28px 0;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+    padding-block: 0.6%;
+    border-block: 3px solid;
+    border-color: #e5e5e5;
+}
+#sredina1{
+    background-image:
+    linear-gradient(to bottom, #0000 , rgba(0, 14, 33, 0.73)),
+    url('slika123.jpg');
+    background-size: cover;
+    color: white;
+    padding-top:16rem;
+    text-align: center;
+    padding-bottom: 20%;
+    font-size: 4.5rem;
+}
+#tekst2{
+    font-family: Calibri, sans-serif;
+    color: ghostwhite;
+    font-size: 30px;
+}
+table{
+    margin-block: 2.2%;
+    border: 3px solid #676767;
+    border-collapse: separate;
+    border-radius: 5px;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr, th, td{
+    font-family: Calibri, sans-serif;
+    font-size: 27px;
+    color: #3a3a3a;
+    padding: 10px 70px 10px 6px;
+}
+th {
+    border-top: none;
+}
+td:first-child, th:first-child {
+    border-left: none;
+}
+tr:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+.spanchinja{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    height: 100rem;
+    background-color: #0077b6;
+    background-image: linear-gradient(to bottom, #0000 , rgba(0, 30, 61, 0.8));
+}
+.slikcinja{
+    margin-top: 90px;
+    width: 35%;
+    border-radius: 100%;
+}
+.naslovi1{
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+    color: whitesmoke;
+    text-shadow: 7px 1px #d7438e;
+}
+.spanchinja_txt{
+    padding-inline: 10%;
+    text-align: justify;
+    text-justify: inter-character;
+    text-shadow: 2px 2px dimgrey;
+}
+footer{
+    font-size: 25px;
+    text-align: center;
+    padding: 2px;
+}
